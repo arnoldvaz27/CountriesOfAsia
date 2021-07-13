@@ -28,7 +28,7 @@ Below details are shown in the :
 
 ## Downloading the application
 
-- You can download the application from this [Google Drive Link](https://drive.google.com/file/d/1jbGjgS4A5558d27ePM7cdAsGEDJsK1S8/view?usp=sharing).
+- You can download the application from this [Google Drive Link](https://drive.google.com/file/d/1oqVWtujBfngm4JWjWiWg4A7x1xYppgRq/view?usp=sharing).
 
 - Steps to download the application
   - Donwload the apk from the google drive
