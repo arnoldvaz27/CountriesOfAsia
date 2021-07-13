@@ -4,8 +4,10 @@ This is an Android Application that displays all the Countries of Asia with thei
 ![API](https://img.shields.io/badge/Andriod%20SDK-Min%20API%2022-green) ![API](https://img.shields.io/badge/Android%20Studio-Java-red)  ![API](https://img.shields.io/badge/Rest%20Countries-API-blue)  
 ![API](https://img.shields.io/badge/Http%20request-Volley%20Library-orange)  ![API](https://img.shields.io/badge/Image-Glide%20library-blueviolet) ![API](https://img.shields.io/badge/Database-Room%20database-purple)
 
+![Thank you](https://img.shields.io/badge/Developed%20by-Arnold%20Vaz-red)
+
 ## Features 
-Below details are shown in the : 
+Below details are shown in the application: 
   - Country Flag
   - Country Name 
   - Capital 
@@ -31,8 +33,10 @@ Below details are shown in the :
 - You can download the application from this [Google Drive Link](https://drive.google.com/file/d/1oqVWtujBfngm4JWjWiWg4A7x1xYppgRq/view?usp=sharing).
 
 - Steps to download the application
-  - Donwload the apk from the google drive
+  - Download the zip file from the google drive
   - Then go to the downloads folder of your mobile and install the application
+  - Extract the zip file and you will find the apk file of the application
+  - Click on the apk file and click on the install option
   - If the following popup occurs 
   <img src="https://user-images.githubusercontent.com/70201026/125480261-a86fcaa3-4750-4270-87ee-2e6fd428a50d.png" width="300" height="300">
   
