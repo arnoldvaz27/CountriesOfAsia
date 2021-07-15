@@ -75,6 +75,9 @@
                 android:text="@string/important_note"
                 android:layout_marginStart="5dp"
                 android:textStyle="bold"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
                 />
 
 

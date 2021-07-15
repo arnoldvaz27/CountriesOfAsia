@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity implements CountryListeners 
         //Checking whether the device android version is 9/P or above
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.P) {
             findViewById(R.id.card).setVisibility(View.VISIBLE);
+            findViewById(R.id.Message).setSelected(true);
         }
 
         //Checking whether the device is connected to internet or not
@@ -72,11 +73,23 @@ public class MainActivity extends AppCompatActivity implements CountryListeners 
             @SuppressLint("StaticFieldLeak")
             class Count extends AsyncTask<Void, Void, List<Country>> {
                 int a;
+                int b;
 
                 @Override
                 protected List<Country> doInBackground(Void... voids) {
                     a = CountryDatabase.getCountryDatabase(getApplicationContext()).countryDao().getDataCount();
                     if (a == 50) {
+                        b = 0;
+                    } else {
+                        b = 1;
+                    }
+                    return null;
+                }
+
+                @Override
+                protected void onPostExecute(List<Country> countries) {
+                    super.onPostExecute(countries);
+                    if (b == 0) {
                         Display();
                     } else {
                         @SuppressLint("StaticFieldLeak")
@@ -98,15 +111,7 @@ public class MainActivity extends AppCompatActivity implements CountryListeners 
                             }
                         }
                         new Delete().execute();
-
                     }
-                    return null;
-                }
-
-                @Override
-                protected void onPostExecute(List<Country> countries) {
-                    super.onPostExecute(countries);
-
                 }
             }
             new Count().execute();
@@ -114,11 +119,23 @@ public class MainActivity extends AppCompatActivity implements CountryListeners 
             @SuppressLint("StaticFieldLeak")
             class Count extends AsyncTask<Void, Void, List<Country>> {
                 int a;
+                int b;
 
                 @Override
                 protected List<Country> doInBackground(Void... voids) {
                     a = CountryDatabase.getCountryDatabase(getApplicationContext()).countryDao().getDataCount();
                     if (a == 50) {
+                        b = 0;
+                    } else {
+                        b = 1;
+                    }
+                    return null;
+                }
+
+                @Override
+                protected void onPostExecute(List<Country> countries) {
+                    super.onPostExecute(countries);
+                    if (b == 0) {
                         Display();
                     } else {
                         @SuppressLint("StaticFieldLeak")
@@ -140,15 +157,7 @@ public class MainActivity extends AppCompatActivity implements CountryListeners 
                             }
                         }
                         new Delete().execute();
-
                     }
-                    return null;
-                }
-
-                @Override
-                protected void onPostExecute(List<Country> countries) {
-                    super.onPostExecute(countries);
-
                 }
             }
             new Count().execute();
