@@ -19,7 +19,7 @@ Below details are shown in the application:
   
 ## Libraries used 
 
-1) [GlideToVector](https://github.com/corouteam/GlideToVectorYou) - This library is used for getting images from url and displaying it in the iamgeview
+1) [GlideToVector](https://github.com/corouteam/GlideToVectorYou) - This library is used for getting images from url and displaying it in the imageview
 
 2) [Rest Countries API](https://restcountries.eu/) - This is an API that can be used to fetch the data and get it in the application
     - [Specific to Asia Region](https://restcountries.eu/rest/v2/region/asia)
