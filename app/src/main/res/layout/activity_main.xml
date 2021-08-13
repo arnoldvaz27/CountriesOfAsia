@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activity.MainActivity"
+    android:background="@drawable/splashscreen"
     android:orientation="vertical">
 
     <LinearLayout
@@ -31,7 +32,7 @@
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:src="@drawable/refresh"
-            android:layout_marginEnd="8dp"
+            android:layout_marginEnd="4dp"
             app:tint="@color/white"
             android:contentDescription="@string/reload_image" />
 
@@ -40,9 +41,18 @@
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:src="@drawable/delete"
+            android:layout_marginStart="6dp"
             app:tint="@color/white"
             android:contentDescription="@string/delete_image" />
 
+        <ImageView
+            android:id="@+id/more"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/menu"
+            android:layout_marginStart="6dp"
+            app:tint="@color/white"
+            android:contentDescription="@string/moreMenu" />
 
 
     </LinearLayout>

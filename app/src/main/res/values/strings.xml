@@ -6,4 +6,10 @@
     <string name="reload_image">Reload Image</string>
     <string name="flag_image">Flag Images</string>
     <string name="countries_information">Countries Information</string>
+    <string name="moreMenu">More Menu</string>
+    <string name="more_options">More Options</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_and_condition">Terms And Condition</string>
+    <string name="for_developer">For Developer</string>
+    <string name="website">Website</string>
 </resources>

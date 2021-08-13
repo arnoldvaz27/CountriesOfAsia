@@ -15,7 +15,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CountriesOfAsia"
         tools:ignore="AllowBackup">
-        <activity android:name=".Activity.SplashScreen">
+        <activity
+            android:name=".Activity.MoreMenu"
+            android:exported="true" />
+        <activity android:name=".Activity.SplashScreen"
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
