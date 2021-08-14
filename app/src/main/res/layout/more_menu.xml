@@ -166,6 +166,37 @@
             android:textSize="22sp" />
 
     </LinearLayout>
+    <LinearLayout
+        android:id="@+id/youtube"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:weightSum="2"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/youtube"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="16dp"
+            app:tint="@color/black"
+            android:contentDescription="@string/moreMenu" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:includeFontPadding="false"
+            android:text="@string/youtube"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+    </LinearLayout>
 
 
 </LinearLayout>

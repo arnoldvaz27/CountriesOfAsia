@@ -18,8 +18,7 @@
         <activity
             android:name=".Activity.MoreMenu"
             android:exported="true" />
-        <activity android:name=".Activity.SplashScreen"
-            android:exported="false">
+        <activity android:name=".Activity.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,5 +27,4 @@
         </activity>
         <activity android:name=".Activity.MainActivity" />
     </application>
-
 </manifest>

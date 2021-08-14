@@ -169,12 +169,7 @@ public class MainActivity extends AppCompatActivity implements CountryListeners 
         //imageview with click listener, which will delete the data after the user clicks on this view
         imageView.setOnClickListener(v -> DeletingData());
 
-        imageView1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),MoreMenu.class));
-            }
-        });
+        imageView1.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(),MoreMenu.class)));
         //imageview with click listener, which will reload the whole activity without any animation.
         findViewById(R.id.refresh).setOnClickListener(v -> {
             Intent i = new Intent(MainActivity.this, MainActivity.class);
