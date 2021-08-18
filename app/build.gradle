@@ -44,5 +44,4 @@ dependencies {
     annotationProcessor 'androidx.room:room-compiler:2.3.0' //room database compiler library
     implementation 'com.github.corouteam:GlideToVectorYou:v2.0.0' //glide library to get the image from the url
 
-
 }
