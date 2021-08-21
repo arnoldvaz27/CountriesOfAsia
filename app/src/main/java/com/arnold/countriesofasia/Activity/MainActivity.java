@@ -1,6 +1,7 @@
 package com.arnold.countriesofasia.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -24,6 +25,7 @@ import com.arnold.countriesofasia.Adapter.CountryAdapter;
 import com.arnold.countriesofasia.JavaClasses.MySingleton;
 import com.arnold.countriesofasia.R;
 import com.arnold.countriesofasia.database.CountryDatabase;
+import com.arnold.countriesofasia.databinding.ActivityMainBinding;
 import com.arnold.countriesofasia.entites.Country;
 import com.arnold.countriesofasia.listeners.CountryListeners;
 
@@ -37,6 +39,7 @@ import java.util.List;
 @SuppressWarnings({"deprecation"})
 public class MainActivity extends AppCompatActivity implements CountryListeners {
 
+    ActivityMainBinding binding;
     // declaration of the various views and components
     ImageView imageView,imageView1;
     String countryName, countryBorders, population, subregion, region, capital, flag, languages;
@@ -50,13 +53,13 @@ public class MainActivity extends AppCompatActivity implements CountryListeners 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setStatusBarColor(getResources().getColor(R.color.holo_red));
-        setContentView(R.layout.activity_main);
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main);  //binding xml layout to java file
 
         //initializing
         loadingBar = new ProgressDialog(this);
-        imageView = findViewById(R.id.delete);
-        imageView1 = findViewById(R.id.more);
-        countryRecyclerView = findViewById(R.id.RecyclerView);
+        imageView = binding.delete;
+        imageView1 = binding.more;
+        countryRecyclerView = binding.RecyclerView;
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(MainActivity.this);
         linearLayoutManager.setReverseLayout(true);
@@ -65,8 +68,8 @@ public class MainActivity extends AppCompatActivity implements CountryListeners 
 
         //Checking whether the device android version is 9/P or above
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.P) {
-            findViewById(R.id.card).setVisibility(View.VISIBLE);
-            findViewById(R.id.Message).setSelected(true);
+            binding.card.setVisibility(View.VISIBLE);
+            binding.Message.setSelected(true);
         }
 
         //Checking whether the device is connected to internet or not
@@ -171,7 +174,7 @@ public class MainActivity extends AppCompatActivity implements CountryListeners 
 
         imageView1.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(),MoreMenu.class)));
         //imageview with click listener, which will reload the whole activity without any animation.
-        findViewById(R.id.refresh).setOnClickListener(v -> {
+        binding.refresh.setOnClickListener(v -> {
             Intent i = new Intent(MainActivity.this, MainActivity.class);
             i.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
             finish();
@@ -266,7 +269,7 @@ public class MainActivity extends AppCompatActivity implements CountryListeners 
             connected = nInfo != null && nInfo.isAvailable() && nInfo.isConnected();
             return connected;
         } catch (Exception e) {
-            Toast.makeText(MainActivity.this, (CharSequence) e, Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "Network not connected, Please refresh again", Toast.LENGTH_SHORT).show();
         }
         return false;
     }
