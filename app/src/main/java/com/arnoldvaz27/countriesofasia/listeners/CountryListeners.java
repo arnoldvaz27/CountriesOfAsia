@@ -1,6 +1,6 @@
-package com.arnold.countriesofasia.listeners;
+package com.arnoldvaz27.countriesofasia.listeners;
 
-import com.arnold.countriesofasia.entites.Country;
+import com.arnoldvaz27.countriesofasia.entites.Country;
 
 public interface CountryListeners {
 

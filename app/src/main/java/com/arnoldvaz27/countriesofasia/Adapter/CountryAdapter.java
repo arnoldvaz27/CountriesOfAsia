@@ -1,4 +1,4 @@
-package com.arnold.countriesofasia.Adapter;
+package com.arnoldvaz27.countriesofasia.Adapter;
 
 import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
@@ -11,10 +11,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.arnold.countriesofasia.R;
-import com.arnold.countriesofasia.JavaClasses.ImageFetch;
-import com.arnold.countriesofasia.entites.Country;
-import com.arnold.countriesofasia.listeners.CountryListeners;
+import com.arnoldvaz27.countriesofasia.R;
+import com.arnoldvaz27.countriesofasia.JavaClasses.ImageFetch;
+import com.arnoldvaz27.countriesofasia.entites.Country;
+import com.arnoldvaz27.countriesofasia.listeners.CountryListeners;
 
 import java.util.List;
 

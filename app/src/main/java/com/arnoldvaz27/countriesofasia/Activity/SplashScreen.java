@@ -1,4 +1,4 @@
-package com.arnold.countriesofasia.Activity;
+package com.arnoldvaz27.countriesofasia.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -8,8 +8,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.arnold.countriesofasia.R;
-import com.arnold.countriesofasia.databinding.SplashScreenBinding;
+import com.arnoldvaz27.countriesofasia.R;
+import com.arnoldvaz27.countriesofasia.databinding.SplashScreenBinding;
 
 //splashscreen of the application
 public class SplashScreen extends AppCompatActivity {

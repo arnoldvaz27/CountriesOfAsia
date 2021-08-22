@@ -1,4 +1,4 @@
-package com.arnold.countriesofasia.Activity;
+package com.arnoldvaz27.countriesofasia.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -21,13 +21,13 @@ import android.widget.Toast;
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.toolbox.JsonArrayRequest;
-import com.arnold.countriesofasia.Adapter.CountryAdapter;
-import com.arnold.countriesofasia.JavaClasses.MySingleton;
-import com.arnold.countriesofasia.R;
-import com.arnold.countriesofasia.database.CountryDatabase;
-import com.arnold.countriesofasia.databinding.ActivityMainBinding;
-import com.arnold.countriesofasia.entites.Country;
-import com.arnold.countriesofasia.listeners.CountryListeners;
+import com.arnoldvaz27.countriesofasia.Adapter.CountryAdapter;
+import com.arnoldvaz27.countriesofasia.JavaClasses.MySingleton;
+import com.arnoldvaz27.countriesofasia.R;
+import com.arnoldvaz27.countriesofasia.database.CountryDatabase;
+import com.arnoldvaz27.countriesofasia.databinding.ActivityMainBinding;
+import com.arnoldvaz27.countriesofasia.entites.Country;
+import com.arnoldvaz27.countriesofasia.listeners.CountryListeners;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -265,7 +265,7 @@ public class MainActivity extends AppCompatActivity implements CountryListeners 
         boolean connected;
         try {
             ConnectivityManager cm = (ConnectivityManager) getApplicationContext().getSystemService(CONNECTIVITY_SERVICE);
-            NetworkInfo nInfo = cm.getActiveNetworkInfo();
+            @SuppressLint("MissingPermission") NetworkInfo nInfo = cm.getActiveNetworkInfo();
             connected = nInfo != null && nInfo.isAvailable() && nInfo.isConnected();
             return connected;
         } catch (Exception e) {

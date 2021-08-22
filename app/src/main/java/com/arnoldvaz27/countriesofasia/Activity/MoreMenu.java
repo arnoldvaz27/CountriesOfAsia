@@ -1,18 +1,14 @@
-package com.arnold.countriesofasia.Activity;
+package com.arnoldvaz27.countriesofasia.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
-import android.app.DownloadManager;
-import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
-import android.view.View;
 
-import com.arnold.countriesofasia.R;
-import com.arnold.countriesofasia.databinding.MoreMenuBinding;
+import com.arnoldvaz27.countriesofasia.R;
+import com.arnoldvaz27.countriesofasia.databinding.MoreMenuBinding;
 
 public class MoreMenu extends AppCompatActivity {
 
