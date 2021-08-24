@@ -23,7 +23,7 @@ public class SplashScreen extends AppCompatActivity {
         getWindow().setNavigationBarColor(getResources().getColor(R.color.background));
         binding = DataBindingUtil.setContentView(this, R.layout.splash_screen);  //binding xml layout to java file
 
-        binding.europe.setOnClickListener(v -> startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://programmingdrive.blogspot.com/2021/08/Programming%20Drive%20App%20Store.html"))));
+        binding.europe.setOnClickListener(v -> startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://programmingdrive.blogspot.com/2021/08/Countries%20Applications.html"))));
         binding.appStore.setOnClickListener(v -> startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://programmingdrive.blogspot.com/2021/08/Programming%20Drive%20App%20Store.html"))));
 
         // this new handler will move from splash screen to the main activity of the app after 2 sec or 2000 ms.
@@ -34,5 +34,4 @@ public class SplashScreen extends AppCompatActivity {
             SplashScreen.this.finish();
         }, SPLASH_SCREEN_TIME_OUT);
     }
-
 }
